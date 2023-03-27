@@ -1,0 +1,335 @@
+:root {
+  --navy-blue: #2e2f42;
+  --primary-brand: #4d5ae5;
+  --text: #434455;
+  --white-background: #ffffff;
+  --light: #f4f4fd;
+  --pressed-state: #404bbf;
+  --text-footer: #e7e9fc;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background-color: var(--white-background);
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* =====================================Header==================================== */
+.pg-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid var(--text-footer);
+}
+
+.ph-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.west {
+  margin-right: 76px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.addr {
+  display: flex;
+  align-items: center;
+}
+
+.logo-left {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-brand);
+  text-transform: uppercase;
+ 
+}
+.logo-right {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  letter-spacing: 0.03em;
+  color: var(--navy-blue);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.menu-link:active,
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--pressed-state);
+}
+
+.contakt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-left: auto;
+}
+
+/* ================================Hero============================ */
+.hero-background {
+  background: #2e2f42;
+  padding: 188px 0;
+  /* width: 1440px; */
+  text-align: center;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  min-width: 168 px;
+  padding: 16px 32px;
+  border: 1px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--pressed-state);
+}
+/* =========================================section2 future===================================================== */
+.title-second {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.text-fea {
+  display: flex;
+  gap: 24px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+/* =========================================section3===================================================== */
+.title-thirt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+/* =========================================section4===================================================== */
+.team {
+  background-color: var(--light);
+  margin-right: auto;
+  margin-left: auto;
+}
+.background-team {
+  display: block;
+  background-color: var(--white-background);
+}
+.team-card {
+  display: flex;
+  gap: 24px;
+}
+.card {
+  padding: 32px 16px;
+ border: 1px solid var(--text-footer);
+ border-top: 0 ;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.text-card {
+  margin: 0;
+}
+/* =====================================Footer=============================== */
+
+.background-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--navy-blue);
+}
+
+.logo-right-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--light);
+}
+.text-footer {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: var(--light);
+  max-width: 264px;
+  margin-top: 17px;
+}
+/* ================================Portfolio=========================================== */
+.btn-port {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  
+  margin-bottom: 72px;
+ 
+}
+.cont-portfolio{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+/* .wrap-btn{
+  justify-content: center;
+} */
+
+.btn {
+  display: flex;
+  padding: 12px 24px;
+  border: 1px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.team-card-port {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.card-port {
+  padding: 32px 16px;
+  border: 1px solid var(--text-footer);
+  border-top: 0;
+}
+
+.button-portfolio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  background-color: var(--light);
+  cursor: pointer;
+}
+.title-port {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--white-background);
+  background-color: var(--pressed-state);
+}
