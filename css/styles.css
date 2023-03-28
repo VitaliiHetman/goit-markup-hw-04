@@ -6,6 +6,7 @@
   --light: #f4f4fd;
   --pressed-state: #404bbf;
   --text-footer: #e7e9fc;
+  --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
 }
 
 html {
@@ -105,8 +106,8 @@ button {
   letter-spacing: 0.03em;
   color: var(--primary-brand);
   text-transform: uppercase;
- 
 }
+
 .logo-right {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -144,9 +145,17 @@ button {
 .hero-background {
   background: #2e2f42;
   padding: 188px 0;
-  /* width: 1440px; */
   text-align: center;
 }
+
+.bg-container {
+  background-image: var(--bg-gradient), url(../images/people-office1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 188px 0;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -221,7 +230,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--text);
 }
-/* =========================================section4===================================================== */
+/* =========================================section team===================================================== */
 .team {
   background-color: var(--light);
   margin-right: auto;
@@ -237,14 +246,38 @@ button {
 }
 .card {
   padding: 32px 16px;
- border: 1px solid var(--text-footer);
- border-top: 0 ;
+  border: 1px solid var(--text-footer);
+  border-top: 0;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 .text-card {
   margin: 0;
+  margin-bottom: 8px;
 }
+
+/* ==================================section social ==================================== */
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px
+}
+
+.team-soc-item {
+  width: 40px;
+height: 40px;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  display: block;
+}
+
+
 /* =====================================Footer=============================== */
 
 .background-footer {
@@ -275,11 +308,10 @@ button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  
+
   margin-bottom: 72px;
- 
 }
-.cont-portfolio{
+.cont-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
